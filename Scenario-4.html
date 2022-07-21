@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scenario-4</title>
+</head>
+<style>
+    @font-face{
+	font-family: new_font1;
+	src:url(fonts/Boarding PersonalUse.ttf);
+    }
+    @font-face{
+	font-family: new_font2;
+	src:url(fonts/calistoga-v10-latin-regular.ttf);
+    }
+    .main-div{
+        display: flex;
+        
+    }
+    .left-div{
+        font-family: new_font2, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    }
+    .right-div{
+        font-family: new_font1, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    }
+    .left-div, .right-div{
+        height: 75px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 2px;
+        margin: 3px;
+        border: 2px solid gainsboro;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <div class="main-div">
+        <div class="left-div">
+            <header>
+                “A Tale of Two Cities” by Charles Dickens
+            </header>
+        </div>
+        <div class="right-div">
+            <p>
+                The novel tells the story of the French Doctor Manette, 
+                his 18-year-long imprisonment in the Bastille in Paris,
+                and his release to live in London with his daughter Lucie whom he had never met. 
+                The story is set against the conditions that led up to the French Revolution and 
+                the Reign of Terror.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
