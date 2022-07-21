@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scenario-3</title>
+</head>
+<body>
+    <ul id="list">
+        <li class="listitem">
+            Steve Martin-145130
+        </li>
+        <li class="listitem">
+            Ruth Jobs-133333
+        </li>
+        <li class="listitem">
+            John Smith-1234566
+        </li>
+    </ul>
+    <script>
+        var listItems = document.getElementById('list').childNodes
+        var myArray = [];
+        for(var i=0;i < listItems.length; i++) {
+            var arrValue = listItems[i].innerHTML;
+            if(arrValue != undefined){
+                var stringValue = (arrValue).toString().trim();
+                for(let c of stringValue){
+                    if(c == "5"){
+                        listItems[i].style.color = "coral";
+                        listItems[i].style.fontWeight = "bold"
+                    }
+                }
+                myArray.push(stringValue);
+            }   
+        }
+        //const newArray = myArray.map(string => string.trim())
+
+    </script>
+</body>
+</html>
